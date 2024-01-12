@@ -21,5 +21,6 @@
     <small *ngIf="registerForm.get('email')?.hasError('required') && registerForm.get('email')?.touched" class="p-error">Email is required.</small>
     <small *ngIf="registerForm.get('email')?.hasError('email') && registerForm.get('email')?.touched" class="p-error">Email is invalid.</small>
   </section>
+  <app-reusable-form></app-reusable-form>
   <p-button type="submit" label="Submit" [rounded]="true" severity="success"></p-button>
 </form>

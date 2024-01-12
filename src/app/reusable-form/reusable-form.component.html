@@ -1,0 +1,17 @@
+<fieldset formGroupName="deliveryAddress" class="d-flex gap-4 card p-4">
+  <legend>Delivery Address</legend>
+  <section>
+    <label for="zipCode" class="form-label">Zip Code</label>
+    <input type="text" id="zipCode" class="form-control"
+           [ngClass]="{'is-invalid': zipCodeFormControl?.invalid && zipCodeFormControl?.touched}"
+           formControlName="zipCode">
+    <small *ngIf="zipCodeFormControl?.invalid && zipCodeFormControl?.touched" class="p-error">Zip code is required.</small>
+  </section>
+  <section>
+    <label for="street" class="form-label">Street</label>
+    <input type="text" id="street" class="form-control"
+           [ngClass]="{'is-invalid': streetFormControl?.invalid && streetFormControl?.touched}"
+           formControlName="street">
+    <small *ngIf="streetFormControl?.invalid && streetFormControl?.touched" class="p-error">Street is required.</small>
+  </section>
+</fieldset>

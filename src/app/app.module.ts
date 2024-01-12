@@ -5,12 +5,15 @@ import { AppComponent } from './app.component';
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {ButtonModule} from "primeng/button";
 import {MessageModule} from "primeng/message";
-import { ReactiveForms1Component } from './reactive-forms-1/reactive-forms-1.component';
+import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
+import { ReusableFormComponent } from './reusable-form/reusable-form.component';
+import {FieldsetModule} from "primeng/fieldset";
 
 @NgModule({
   declarations: [
     AppComponent,
-    ReactiveForms1Component
+    ReactiveFormsComponent,
+    ReusableFormComponent
   ],
   imports: [
     FormsModule,
@@ -18,7 +21,8 @@ import { ReactiveForms1Component } from './reactive-forms-1/reactive-forms-1.com
     AppRoutingModule,
     ButtonModule,
     ReactiveFormsModule,
-    MessageModule
+    MessageModule,
+    FieldsetModule
   ],
   providers: [],
   bootstrap: [AppComponent]

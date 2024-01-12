@@ -35,9 +35,15 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.css",
+              "node_modules/bootstrap-icons/font/bootstrap-icons.scss",
+              "node_modules/primeng/resources/themes/viva-dark/theme.css",
+              "node_modules/primeng/resources/primeng.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -101,5 +107,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "78797332-4bff-45e1-9aa8-3031a84341ce"
   }
 }

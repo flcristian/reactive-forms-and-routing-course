@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ReusableFormComponent } from './reusable-form.component';
+import { NavigationComponent } from './navigation.component';
 
-describe('ReusableFormComponent', () => {
-  let component: ReusableFormComponent;
-  let fixture: ComponentFixture<ReusableFormComponent>;
+describe('NavigationComponent', () => {
+  let component: NavigationComponent;
+  let fixture: ComponentFixture<NavigationComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ReusableFormComponent]
+      declarations: [NavigationComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(ReusableFormComponent);
+    fixture = TestBed.createComponent(NavigationComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

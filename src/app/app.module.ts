@@ -8,12 +8,20 @@ import {MessageModule} from "primeng/message";
 import { ReactiveFormsComponent } from './reactive-forms/reactive-forms.component';
 import { ReusableFormComponent } from './reusable-form/reusable-form.component';
 import {FieldsetModule} from "primeng/fieldset";
+import { HomeComponent } from './home/home.component';
+import { AboutComponent } from './about/about.component';
+import { ContactComponent } from './contact/contact.component';
+import { NavigationComponent } from './navigation/navigation.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ReactiveFormsComponent,
-    ReusableFormComponent
+    ReusableFormComponent,
+    HomeComponent,
+    AboutComponent,
+    ContactComponent,
+    NavigationComponent
   ],
   imports: [
     FormsModule,
